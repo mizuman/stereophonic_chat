@@ -6,7 +6,7 @@ var panner = audioCtx.createPanner();
 var gainNode = audioCtx.createGain();
 
 // PeerJS object
-var peer = new Peer({ key: '6165842a-5c0d-11e3-b514-75d3313b9d05', debug: 1});
+var peer = new Peer({ key: '78dd2be1-6a65-4676-b36c-d6f519a478de', debug: 1});
 
 peer.on('open', function(){
     $('#my-id').text(peer.id);
