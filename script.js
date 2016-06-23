@@ -106,11 +106,9 @@ $(window).ready(function(){
 })
 
 function changeDirection(elem){
-    console.log(elem.val());
     panner.setPosition(elem.val()*2, -1, 0);
 }
 
 function changeGain(elem){
-    console.log(elem.val());
     gainNode.gain.value = elem.val();
 }
