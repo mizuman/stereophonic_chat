@@ -75,7 +75,7 @@ function step3 (call) {
         var source = audioCtx.createMediaStreamSource(stream);   
         source.connect(gainNode);
         
-        panner.setPosition(2,-1,0);
+        panner.setPosition(2, 0,-1);
 
         gainNode.connect(panner);
         panner.connect(audioCtx.destination);
@@ -106,7 +106,7 @@ $(window).ready(function(){
 })
 
 function changeDirection(elem){
-    panner.setPosition(elem.val()*2, -1, 0);
+    panner.setPosition(elem.val()*2, 0, -1);
 }
 
 function changeGain(elem){
